@@ -7,11 +7,8 @@ public class MultiplicaSRecursiva {
 	}
 	
 	public int MultSRecursiva (int na, int nb, int contador) {
-		if (contador == nb) {
-			return na;
-		}
-		if (contador < nb) {
-			
+		if (nb == 0 || na == 0 || contador == nb) {
+			return 0;
 		}
 		return na + MultSRecursiva (na, nb, contador + 1);
 	}
